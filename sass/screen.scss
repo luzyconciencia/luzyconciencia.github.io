@@ -1,10 +1,17 @@
 @import "compass/reset";
 
 @import url(http://fonts.googleapis.com/css?family=Cinzel+Decorative:400,700);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+$sans : "open sans", sans;
+$font-color: #181818;
+$highlight: #EF136B;
 
 body {
 	font-size: 100%;
 	width: 100%;
+	font-family: $sans;
+	color: $font-color;
 }
 
 .wrapp {
@@ -12,8 +19,16 @@ body {
 	margin: 0 auto;
 }
 
+.content {
+	padding: 2em 0;
+}
+
 .cinzel {
 	font-family: 'Cinzel Decorative', cursive;
+}
+
+a {
+	text-decoration: none;
 }
 
 .cf {
@@ -31,11 +46,30 @@ h1 {
 }
 
 header {
-	h1 {
-		padding: .5em 0;
-	}	
+		h1 {
+			padding: .5em 0;
+			display: inline-block;
+		}
 }
 
 nav {
-
+	float: right;
+	padding: 1.5em 0;
+	ul {
+	 	li {
+	 		font-weight: bold;
+	 		text-transform: uppercase;
+	 		margin-left: 2em;
+	 		float: left;
+	 		 	&:first-child {
+	 		 		margin: 0;
+	 		 	}
+	 		 	a {
+	 		 		color: inherit;
+	 		 			&:hover {
+	 		 				color: $highlight;
+	 		 			}
+	 		 	}
+	 	}
+	}
 }
