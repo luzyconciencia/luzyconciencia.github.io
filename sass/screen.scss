@@ -1,6 +1,41 @@
-/* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-
 @import "compass/reset";
+
+@import url(http://fonts.googleapis.com/css?family=Cinzel+Decorative:400,700);
+
+body {
+	font-size: 100%;
+	width: 100%;
+}
+
+.wrapp {
+	max-width: 60em;
+	margin: 0 auto;
+}
+
+.cinzel {
+	font-family: 'Cinzel Decorative', cursive;
+}
+
+.cf {
+	&::after, &::before {
+	    content: " ";
+	    display: table;
+	}
+	&::after {
+		clear: both;
+	}
+}
+
+h1 {
+	font-size: 2em;
+}
+
+header {
+	h1 {
+		padding: .5em 0;
+	}	
+}
+
+nav {
+
+}

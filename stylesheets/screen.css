@@ -1,7 +1,4 @@
-/* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+@import url(http://fonts.googleapis.com/css?family=Cinzel+Decorative:400,700);
 /* line 17, ../../../../../Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -65,4 +62,41 @@ a img {
 /* line 116, ../../../../../Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
+}
+
+/* line 5, ../sass/screen.scss */
+body {
+  font-size: 100%;
+  width: 100%;
+}
+
+/* line 10, ../sass/screen.scss */
+.wrapp {
+  max-width: 60em;
+  margin: 0 auto;
+}
+
+/* line 15, ../sass/screen.scss */
+.cinzel {
+  font-family: 'Cinzel Decorative', cursive;
+}
+
+/* line 20, ../sass/screen.scss */
+.cf::after, .cf::before {
+  content: " ";
+  display: table;
+}
+/* line 24, ../sass/screen.scss */
+.cf::after {
+  clear: both;
+}
+
+/* line 29, ../sass/screen.scss */
+h1 {
+  font-size: 2em;
+}
+
+/* line 34, ../sass/screen.scss */
+header h1 {
+  padding: .5em 0;
 }
