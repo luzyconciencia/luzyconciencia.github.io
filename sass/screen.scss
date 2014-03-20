@@ -4,8 +4,11 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
 
 $sans : "open sans", sans;
-$font-color: #181818;
+$font-color: #3e3e3e;
 $highlight: #EF136B;
+$orange: #ED702B;
+$light-font: lighten($font-color, 25%);
+$light-border: #DDD;
 
 body {
 	font-size: 100%;
@@ -25,6 +28,24 @@ body {
 
 .cinzel {
 	font-family: 'Cinzel Decorative', cursive;
+}
+
+.ir {
+	text-indent: 100%;
+	overflow: hidden;
+}
+
+a.ir {
+	display: block;
+}
+
+.col-1 {
+	width: 45%;
+	float: left;
+	margin-left: 5%;
+		&:first-of-type {
+			margin-left: 0;
+		}
 }
 
 a {
@@ -71,5 +92,64 @@ nav {
 	 		 			}
 	 		 	}
 	 	}
+	}
+}
+
+.recent-articles {
+	font-size: 2.5em;
+}
+
+main {
+	padding: 2.5em 0 1em 0;
+}
+
+article {
+	padding-bottom: 1.5em;
+	border-bottom: 1px solid $light-border;
+	margin-bottom: 1em;
+
+	 a {
+	 	display: block;
+	 	font-size: 1.8em;
+	 	font-weight: bold;
+	 	line-height: 1.8em;
+	 	color: inherit;
+	 		&:hover {
+	 			opacity: 0.8;
+	 		}
+	 }
+	 p {
+	 	padding: .5em 0;
+	 	line-height: 1.8em;
+	 }
+	 span {
+	 	color: $light-font;;
+	 }
+	 .readmore {
+	 	color: $orange;
+	 	font-size: 1em;
+	 	line-height: 1em;
+	 }
+}
+
+footer {
+	background: $font-color;
+	padding: 2em 0 5em 0;
+	nav {
+		color: white;
+		float: none;
+		width: 460px;
+		margin: 0 auto;
+			li {
+				a {
+					&:hover {
+						color: $light-border;
+					}
+				}
+			}
+	}
+	p {
+		text-align: center;
+		color: $light-border;
 	}
 }
