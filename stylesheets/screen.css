@@ -112,7 +112,7 @@ h1 {
 /* line 49, ../sass/screen.scss */
 header h1 {
   padding: .5em 0;
-  display: inline-block;
+  float: left;
 }
 
 /* line 55, ../sass/screen.scss */
