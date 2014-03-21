@@ -6,28 +6,38 @@
 $sans : "open sans", sans;
 $font-color: #3e3e3e;
 $highlight: #EF136B;
-$orange: #ED702B;
-$light-font: lighten($font-color, 25%);
-$light-border: #DDD;
+$orange: #F26430;
+$light-border: #E3DCCF;
+$bc : #FFF8F1; //bc = background;
+$coffe : #906F62;
+$light-font: lighten($coffe, 15%);
+$caption : #5C5C69;
 
 body {
 	font-size: 100%;
 	width: 100%;
 	font-family: $sans;
 	color: $font-color;
+	background: $bc url(../images/patterns/retina_wood.png);
 }
 
 .wrapp {
+	padding: 0 1em;
 	max-width: 60em;
 	margin: 0 auto;
 }
 
 .content {
-	padding: 2em 0;
+	padding: 2em 1em;
 }
 
 .cinzel {
 	font-family: 'Cinzel Decorative', cursive;
+}
+
+.logo {
+	font-size: 2em;
+	color: $coffe;
 }
 
 .ir {
@@ -62,15 +72,29 @@ a {
 	}
 }
 
-h1 {
-	font-size: 2em;
+h1, h2, h3, h4, h5, h6 {
+	color: $caption;
 }
 
 header {
+	border-top: 4px solid $coffe;
+	background: white;
+	position: fixed;
+	margin-left: 0;
+	background-color: rgba(255,255,255,0.9);
+	border-bottom: solid 1px #eaeaea;
+	width: 100%;
+	z-index: 500;
+		.wrapp {
+			position:relative;
+		}
 		h1 {
 			padding: .5em 0;
 			float: left;
 		}
+	+ * {
+		padding-top: 7em;
+	}
 }
 
 nav {
@@ -86,12 +110,28 @@ nav {
 	 		 		margin: 0;
 	 		 	}
 	 		 	a {
-	 		 		color: inherit;
+	 		 		color: darken($coffe, 10%);
 	 		 			&:hover {
-	 		 				color: $highlight;
+	 		 				color: $orange;
 	 		 			}
 	 		 	}
 	 	}
+	}
+}
+
+section[data-gallery] {
+	> div {
+		position: relative;
+		width: 100%;
+			> div {
+				position: absolute;
+				width: 100%;
+			}
+			.logo {
+				top: 1.5em;
+				left: 2em;
+				font-size: 4em;
+			}
 	}
 }
 
@@ -104,16 +144,18 @@ main {
 }
 
 article {
-	padding-bottom: 1.5em;
+	padding: 1.5em;
 	border-bottom: 1px solid $light-border;
 	margin-bottom: 1em;
-
+	background: white;
+	border-radius: 5%;
 	 a {
 	 	display: block;
 	 	font-size: 1.8em;
 	 	font-weight: bold;
 	 	line-height: 1.8em;
 	 	color: inherit;
+	 	color: $coffe;
 	 		&:hover {
 	 			opacity: 0.8;
 	 		}
@@ -133,7 +175,7 @@ article {
 }
 
 footer {
-	background: $font-color;
+	background: url(../images/patterns/tweed.png);
 	padding: 2em 0 5em 0;
 	nav {
 		color: white;
@@ -142,14 +184,16 @@ footer {
 		margin: 0 auto;
 			li {
 				a {
-					&:hover {
-						color: $light-border;
-					}
+					color: white;
+						&:hover {
+							color: white;
+							opacity: 0.8;
+						}
 				}
 			}
 	}
 	p {
 		text-align: center;
-		color: $light-border;
+		color: whitesmoke;
 	}
 }
