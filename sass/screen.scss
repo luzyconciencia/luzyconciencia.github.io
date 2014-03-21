@@ -1,3 +1,21 @@
+
+@mixin transform($trn...) {
+    $max: length($trn);
+    $transforms: '';
+
+    @for $i from 1 through $max {
+        $transforms: #{$transforms + nth($trn, $i)};
+
+        @if $i < $max {
+            $transforms: #{$transforms + ", "};
+        }
+    }
+    -webkit-transform: $transforms;
+    -moz-transform:    $transforms;
+    -o-transform:      $transforms;
+    transform:         $transforms;
+}
+
 @import "compass/reset";
 
 @import url(http://fonts.googleapis.com/css?family=Cinzel+Decorative:400,700);
@@ -128,8 +146,12 @@ nav {
 section[data-gallery] {
 	position: relative;
 	.gallery-items {
+		position: relative;
+		overflow: hidden;
 		 > div {
 		 	width: 100%;
+		 	top: 0;
+		 	transition: all linear 2s;
 		 }
 	}
 	.logo {
@@ -147,6 +169,16 @@ section[data-gallery] {
 		right: 0;
 		bottom: 1.5em;
 	}
+}
+
+.gallery-right {
+	position: absolute;
+	@include transform( translate(100%) );
+}
+
+.gallery-left {
+	position: absolute;
+	@include transform( translate(-100%) );
 }
 
 ul[data-thumbs] {
