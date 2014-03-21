@@ -12,6 +12,7 @@ $bc : #FFF8F1; //bc = background;
 $coffe : #906F62;
 $light-font: lighten($coffe, 15%);
 $caption : #505050;
+$leaf : #6FED40;
 
 body {
 	font-size: 100%;
@@ -125,22 +126,53 @@ nav {
 }
 
 section[data-gallery] {
-	> div {
-		position: relative;
-		width: 100%;
-			> div {
-				position: absolute;
-				width: 100%;
-				left: 0;
-				right: 0;
-				top: 4em;
-			}
-			.logo {
-				top: 1.5em;
-				left: 2em;
-				font-size: 4em;
-			}
+	position: relative;
+	.gallery-items {
+		 > div {
+		 	width: 100%;
+		 }
 	}
+	.logo {
+		font-size: 4em;
+		margin-top: 1em;
+	}
+	.wrapp {
+		position: absolute;
+		margin: 0 auto;
+		left: 0;
+		right: 0;
+	}
+	.thumbs {
+		position: absolute;
+		right: 0;
+		bottom: 1.5em;
+	}
+}
+
+ul[data-thumbs] {
+		li{
+			width: 1em;
+			height: 1em;
+			background: rgba(255, 255, 255, 0.8);
+			border-radius: 50%;
+			float: left;
+			margin-left: 1em;
+			opacity: 0.8;
+			transition: background linear 0.5s;
+				&:first-child {
+					margin: 0;
+				}
+				&:hover {
+					cursor: hand;
+					cursor: pointer;
+					background: rgba(255, 255, 255, 0.6)
+				}
+				&.active {
+					background: $leaf;
+					opacity: 0.5;
+				}
+		}
+	float: right;
 }
 
 .recent-articles {
