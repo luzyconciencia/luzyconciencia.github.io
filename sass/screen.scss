@@ -11,7 +11,7 @@ $light-border: #E3DCCF;
 $bc : #FFF8F1; //bc = background;
 $coffe : #906F62;
 $light-font: lighten($coffe, 15%);
-$caption : #5C5C69;
+$caption : #505050;
 
 body {
 	font-size: 100%;
@@ -38,6 +38,11 @@ body {
 .logo {
 	font-size: 2em;
 	color: $coffe;
+		span {
+			display: block;
+			width: 100%;
+			line-height: 1.5em;
+		}
 }
 
 .ir {
@@ -126,6 +131,9 @@ section[data-gallery] {
 			> div {
 				position: absolute;
 				width: 100%;
+				left: 0;
+				right: 0;
+				top: 4em;
 			}
 			.logo {
 				top: 1.5em;
@@ -148,7 +156,7 @@ article {
 	border-bottom: 1px solid $light-border;
 	margin-bottom: 1em;
 	background: white;
-	border-radius: 5%;
+	border-radius: 20px;
 	 a {
 	 	display: block;
 	 	font-size: 1.8em;
