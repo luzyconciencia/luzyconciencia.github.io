@@ -35,6 +35,7 @@
 			});
 
 			thumb.addEvent('click',changeView);
+			thumb.addEvent('click',removeInterval);
 		}
 
 		thumb_wrapper.get('li:first-child').addClass('active');
@@ -49,6 +50,10 @@
 		function cancel_auto_gallery(){ userover = true; }
 
 		function continue_auto_gallery(){ userover = false;	}
+
+		function removeInterval(){
+			w.clearInterval( galleryInterval );
+		}
 
 		function changeView(){
 
