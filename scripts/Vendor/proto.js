@@ -31,19 +31,11 @@
 	   }
 	}
 
+	Document.prototype.get = Element.prototype.get;
+
 	Element.prototype.append = function(child){
-
-		var objectType = getObjectType(child);
-
-		if( ( objectType === 'NodeList') || (objectType === 'Array') ){
-			var l = child.length,
-				i = 0;
-			for(;i<l;i++){
-				this.appendChild( child[i] );
-			}
-		} else { 	
-			this.appendChild( child );
-		}
+		
+		this.appendChild( child );
 
 		return this;
 	}
@@ -55,28 +47,12 @@
 
 	Element.prototype.prepend = function(child){
 
-		var objectType = getObjectType(child);
-
-		if( ( objectType === 'NodeList') || (objectType === 'Array') ){
-			var l = child.length,
-				i = 0;
-
-			for(;i<l;i++){
-				if(this.firstChild){
-					this.insertBefore(child, this.firstChild);
-				} else {
-					this.appendChild(child);
-				}
-			}
-
-		} else { 	
-			if(this.firstChild){
-				this.insertBefore(child, this.firstChild);
-			} else {
-				this.appendChild(child);
-			}
+		if(this.firstChild){
+			this.insertBefore(child, this.firstChild);
+		} else {
+			this.appendChild(child);
 		}
-		
+
 		return this;
 	}
 
@@ -143,6 +119,11 @@
 		return this;
 	}
 
+	Element.prototype.removeClass = function(cls) {
+		this.classList.remove(cls);
+		return this;
+	}
+
 	Element.prototype.remove = function(){
 		this.parentNode.removeChild(this);
 		return this;
@@ -196,6 +177,14 @@
 
 		return this;
 	}
+
+	NodeList.prototype.indexOf = function( element ){
+		
+		var index = Array.prototype.slice.call(this).indexOf( element );
+
+		return index;
+
+	}	
 
 	NodeList.prototype.removeClass = function(cls) {
 		

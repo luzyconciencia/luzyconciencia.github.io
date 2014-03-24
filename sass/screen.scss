@@ -73,6 +73,10 @@ a.ir {
 	display: block;
 }
 
+.color-white {
+	color: white;
+}
+
 .col-1 {
 	width: 45%;
 	float: left;
@@ -148,10 +152,17 @@ section[data-gallery] {
 	.gallery-items {
 		position: relative;
 		overflow: hidden;
+		min-height: 30.938em;
 		 > div {
+		 	position: absolute;
+		 	display: block;
 		 	width: 100%;
 		 	top: 0;
-		 	transition: all linear 2s;
+			transition: all ease 1.5s;
+			opacity: 0;
+				&.active {
+					opacity: 1;
+				}
 		 }
 	}
 	.logo {
@@ -169,16 +180,6 @@ section[data-gallery] {
 		right: 0;
 		bottom: 1.5em;
 	}
-}
-
-.gallery-right {
-	position: absolute;
-	@include transform( translate(100%) );
-}
-
-.gallery-left {
-	position: absolute;
-	@include transform( translate(-100%) );
 }
 
 ul[data-thumbs] {
@@ -204,7 +205,10 @@ ul[data-thumbs] {
 					opacity: 0.5;
 				}
 		}
-	float: right;
+	max-width: 60em;
+	margin: 0 auto;
+	position: relative;
+	top: -2em;
 }
 
 .recent-articles {
