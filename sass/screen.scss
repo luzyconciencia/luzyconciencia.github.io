@@ -73,8 +73,8 @@ a.ir {
 	display: block;
 }
 
-.color-white {
-	color: white;
+.color-translucid {
+	color: rgba(255, 255, 255, 0.6);
 }
 
 .col-1 {
@@ -184,26 +184,34 @@ section[data-gallery] {
 
 ul[data-thumbs] {
 		li{
-			width: 1em;
-			height: 1em;
+			background: white;
+			width: 10em;
+			height: 10em;
 			background: rgba(255, 255, 255, 0.8);
 			border-radius: 50%;
 			float: left;
 			margin-left: 1em;
-			opacity: 0.8;
+			opacity: 0.5;
 			transition: background linear 0.5s;
+			overflow: hidden;
+			border: 2px solid transparent;
 				&:first-child {
 					margin: 0;
+				}
+				&.active {
+					opacity: 0.8;
 				}
 				&:hover {
 					cursor: hand;
 					cursor: pointer;
-					background: rgba(255, 255, 255, 0.6)
+					border: 2px solid white;
 				}
-				&.active {
-					background: $leaf;
-					opacity: 0.5;
-				}
+		}
+		img {			
+			position: relative;
+			background: white;
+			width: auto;
+			height: inherit;
 		}
 	max-width: 60em;
 	margin: 0 auto;
