@@ -86,71 +86,76 @@ body {
   padding: 2em 1em;
 }
 
-/* line 53, ../sass/screen.scss */
+/* line 54, ../sass/screen.scss */
+#articulo .content {
+  padding-top: 5em;
+}
+
+/* line 59, ../sass/screen.scss */
 .cinzel {
   font-family: 'Cinzel Decorative', cursive;
 }
 
-/* line 57, ../sass/screen.scss */
+/* line 63, ../sass/screen.scss */
 .logo {
   font-size: 2em;
   color: #906f62;
 }
-/* line 60, ../sass/screen.scss */
+/* line 66, ../sass/screen.scss */
 .logo span {
   display: block;
   width: 100%;
   line-height: 1.5em;
 }
 
-/* line 67, ../sass/screen.scss */
+/* line 73, ../sass/screen.scss */
 .ir {
   text-indent: 100%;
   overflow: hidden;
 }
 
-/* line 72, ../sass/screen.scss */
+/* line 78, ../sass/screen.scss */
 a.ir {
   display: block;
 }
 
-/* line 76, ../sass/screen.scss */
+/* line 82, ../sass/screen.scss */
 .color-translucid {
   color: rgba(255, 255, 255, 0.6);
 }
 
-/* line 80, ../sass/screen.scss */
+/* line 86, ../sass/screen.scss */
 .col-1 {
   width: 45%;
   float: left;
   margin-left: 5%;
 }
-/* line 84, ../sass/screen.scss */
+/* line 90, ../sass/screen.scss */
 .col-1:first-of-type {
   margin-left: 0;
 }
 
-/* line 89, ../sass/screen.scss */
+/* line 95, ../sass/screen.scss */
 a {
   text-decoration: none;
 }
 
-/* line 94, ../sass/screen.scss */
+/* line 100, ../sass/screen.scss */
 .cf::after, .cf::before {
   content: " ";
   display: table;
 }
-/* line 98, ../sass/screen.scss */
+/* line 104, ../sass/screen.scss */
 .cf::after {
   clear: both;
 }
 
-/* line 103, ../sass/screen.scss */
+/* line 109, ../sass/screen.scss */
 h1, h2, h3, h4, h5, h6 {
   color: #505050;
 }
 
-/* line 107, ../sass/screen.scss */
+/* line 113, ../sass/screen.scss */
 header {
   background: white;
   position: fixed;
@@ -160,56 +165,56 @@ header {
   width: 100%;
   z-index: 500;
 }
-/* line 115, ../sass/screen.scss */
+/* line 121, ../sass/screen.scss */
 header .wrapp {
   position: relative;
 }
-/* line 118, ../sass/screen.scss */
+/* line 124, ../sass/screen.scss */
 header h1 {
   padding: .5em 0;
   float: left;
 }
-/* line 122, ../sass/screen.scss */
+/* line 128, ../sass/screen.scss */
 header + * {
   padding-top: 7em;
 }
 
-/* line 127, ../sass/screen.scss */
+/* line 133, ../sass/screen.scss */
 nav {
   float: right;
   padding: 1.5em 0;
 }
-/* line 131, ../sass/screen.scss */
+/* line 137, ../sass/screen.scss */
 nav ul li {
   font-weight: bold;
   text-transform: uppercase;
   margin-left: 2em;
   float: left;
 }
-/* line 136, ../sass/screen.scss */
+/* line 142, ../sass/screen.scss */
 nav ul li:first-child {
   margin: 0;
 }
-/* line 139, ../sass/screen.scss */
+/* line 145, ../sass/screen.scss */
 nav ul li a {
   color: #72584d;
 }
-/* line 141, ../sass/screen.scss */
+/* line 147, ../sass/screen.scss */
 nav ul li a:hover {
   color: #f26430;
 }
 
-/* line 149, ../sass/screen.scss */
+/* line 155, ../sass/screen.scss */
 section[data-gallery] {
   position: relative;
 }
-/* line 151, ../sass/screen.scss */
+/* line 157, ../sass/screen.scss */
 section[data-gallery] .gallery-items {
   position: relative;
   overflow: hidden;
   min-height: 30.938em;
 }
-/* line 155, ../sass/screen.scss */
+/* line 161, ../sass/screen.scss */
 section[data-gallery] .gallery-items > div {
   position: absolute;
   display: block;
@@ -218,37 +223,37 @@ section[data-gallery] .gallery-items > div {
   transition: all ease 1.5s;
   opacity: 0;
 }
-/* line 162, ../sass/screen.scss */
+/* line 168, ../sass/screen.scss */
 section[data-gallery] .gallery-items > div.active {
   opacity: 1;
 }
-/* line 167, ../sass/screen.scss */
+/* line 173, ../sass/screen.scss */
 section[data-gallery] .logo {
   font-size: 4em;
   margin-top: 1em;
 }
-/* line 171, ../sass/screen.scss */
+/* line 177, ../sass/screen.scss */
 section[data-gallery] .wrapp {
   position: absolute;
   margin: 0 auto;
   left: 0;
   right: 0;
 }
-/* line 177, ../sass/screen.scss */
+/* line 183, ../sass/screen.scss */
 section[data-gallery] .thumbs {
   position: absolute;
   right: 0;
   bottom: 1.5em;
 }
 
-/* line 184, ../sass/screen.scss */
+/* line 190, ../sass/screen.scss */
 ul[data-thumbs] {
   max-width: 60em;
   margin: 0 auto;
   position: relative;
   top: -2em;
 }
-/* line 185, ../sass/screen.scss */
+/* line 191, ../sass/screen.scss */
 ul[data-thumbs] li {
   background: white;
   width: 10em;
@@ -262,11 +267,11 @@ ul[data-thumbs] li {
   overflow: hidden;
   border: 2px solid transparent;
 }
-/* line 197, ../sass/screen.scss */
+/* line 203, ../sass/screen.scss */
 ul[data-thumbs] li:first-child {
   margin: 0;
 }
-/* line 200, ../sass/screen.scss */
+/* line 206, ../sass/screen.scss */
 ul[data-thumbs] li.active {
   background: rgba(255, 255, 255, 0.85);
   opacity: 1;
@@ -275,13 +280,13 @@ ul[data-thumbs] li.active {
   -o-transform: scale(1.15);
   transform: scale(1.15);
 }
-/* line 205, ../sass/screen.scss */
+/* line 211, ../sass/screen.scss */
 ul[data-thumbs] li:hover {
   cursor: hand;
   cursor: pointer;
   background: rgba(255, 255, 255, 0.85);
 }
-/* line 211, ../sass/screen.scss */
+/* line 217, ../sass/screen.scss */
 ul[data-thumbs] img {
   position: relative;
   background: white;
@@ -289,17 +294,17 @@ ul[data-thumbs] img {
   height: inherit;
 }
 
-/* line 223, ../sass/screen.scss */
+/* line 229, ../sass/screen.scss */
 .recent-articles {
   font-size: 2.5em;
 }
 
-/* line 227, ../sass/screen.scss */
+/* line 233, ../sass/screen.scss */
 main {
   padding: 2.5em 0 1em 0;
 }
 
-/* line 231, ../sass/screen.scss */
+/* line 237, ../sass/screen.scss */
 article {
   padding: 1.5em;
   border-bottom: 1px solid #e3dccf;
@@ -307,7 +312,7 @@ article {
   background: white;
   border-radius: 20px;
 }
-/* line 237, ../sass/screen.scss */
+/* line 243, ../sass/screen.scss */
 article a {
   display: block;
   font-size: 1.8em;
@@ -316,48 +321,48 @@ article a {
   color: inherit;
   color: #906f62;
 }
-/* line 244, ../sass/screen.scss */
+/* line 250, ../sass/screen.scss */
 article a:hover {
   opacity: 0.8;
 }
-/* line 248, ../sass/screen.scss */
+/* line 254, ../sass/screen.scss */
 article p {
   padding: .5em 0;
   line-height: 1.8em;
 }
-/* line 252, ../sass/screen.scss */
+/* line 258, ../sass/screen.scss */
 article span {
   color: #b1978d;
 }
-/* line 255, ../sass/screen.scss */
+/* line 261, ../sass/screen.scss */
 article .readmore {
   color: #f26430;
   font-size: 1em;
   line-height: 1em;
 }
 
-/* line 262, ../sass/screen.scss */
+/* line 268, ../sass/screen.scss */
 footer {
   background: url(../images/patterns/tweed.png);
   padding: 2em 0 5em 0;
 }
-/* line 265, ../sass/screen.scss */
+/* line 271, ../sass/screen.scss */
 footer nav {
   color: white;
   float: none;
   width: 460px;
   margin: 0 auto;
 }
-/* line 271, ../sass/screen.scss */
+/* line 277, ../sass/screen.scss */
 footer nav li a {
   color: white;
 }
-/* line 273, ../sass/screen.scss */
+/* line 279, ../sass/screen.scss */
 footer nav li a:hover {
   color: white;
   opacity: 0.8;
 }
-/* line 280, ../sass/screen.scss */
+/* line 286, ../sass/screen.scss */
 footer p {
   text-align: center;
   color: whitesmoke;
