@@ -152,7 +152,6 @@ h1, h2, h3, h4, h5, h6 {
 
 /* line 107, ../sass/screen.scss */
 header {
-  border-top: 4px solid #906f62;
   background: white;
   position: fixed;
   margin-left: 0;
@@ -161,56 +160,56 @@ header {
   width: 100%;
   z-index: 500;
 }
-/* line 116, ../sass/screen.scss */
+/* line 115, ../sass/screen.scss */
 header .wrapp {
   position: relative;
 }
-/* line 119, ../sass/screen.scss */
+/* line 118, ../sass/screen.scss */
 header h1 {
   padding: .5em 0;
   float: left;
 }
-/* line 123, ../sass/screen.scss */
+/* line 122, ../sass/screen.scss */
 header + * {
   padding-top: 7em;
 }
 
-/* line 128, ../sass/screen.scss */
+/* line 127, ../sass/screen.scss */
 nav {
   float: right;
   padding: 1.5em 0;
 }
-/* line 132, ../sass/screen.scss */
+/* line 131, ../sass/screen.scss */
 nav ul li {
   font-weight: bold;
   text-transform: uppercase;
   margin-left: 2em;
   float: left;
 }
-/* line 137, ../sass/screen.scss */
+/* line 136, ../sass/screen.scss */
 nav ul li:first-child {
   margin: 0;
 }
-/* line 140, ../sass/screen.scss */
+/* line 139, ../sass/screen.scss */
 nav ul li a {
   color: #72584d;
 }
-/* line 142, ../sass/screen.scss */
+/* line 141, ../sass/screen.scss */
 nav ul li a:hover {
   color: #f26430;
 }
 
-/* line 150, ../sass/screen.scss */
+/* line 149, ../sass/screen.scss */
 section[data-gallery] {
   position: relative;
 }
-/* line 152, ../sass/screen.scss */
+/* line 151, ../sass/screen.scss */
 section[data-gallery] .gallery-items {
   position: relative;
   overflow: hidden;
   min-height: 30.938em;
 }
-/* line 156, ../sass/screen.scss */
+/* line 155, ../sass/screen.scss */
 section[data-gallery] .gallery-items > div {
   position: absolute;
   display: block;
@@ -219,65 +218,70 @@ section[data-gallery] .gallery-items > div {
   transition: all ease 1.5s;
   opacity: 0;
 }
-/* line 163, ../sass/screen.scss */
+/* line 162, ../sass/screen.scss */
 section[data-gallery] .gallery-items > div.active {
   opacity: 1;
 }
-/* line 168, ../sass/screen.scss */
+/* line 167, ../sass/screen.scss */
 section[data-gallery] .logo {
   font-size: 4em;
   margin-top: 1em;
 }
-/* line 172, ../sass/screen.scss */
+/* line 171, ../sass/screen.scss */
 section[data-gallery] .wrapp {
   position: absolute;
   margin: 0 auto;
   left: 0;
   right: 0;
 }
-/* line 178, ../sass/screen.scss */
+/* line 177, ../sass/screen.scss */
 section[data-gallery] .thumbs {
   position: absolute;
   right: 0;
   bottom: 1.5em;
 }
 
-/* line 185, ../sass/screen.scss */
+/* line 184, ../sass/screen.scss */
 ul[data-thumbs] {
   max-width: 60em;
   margin: 0 auto;
   position: relative;
   top: -2em;
 }
-/* line 186, ../sass/screen.scss */
+/* line 185, ../sass/screen.scss */
 ul[data-thumbs] li {
   background: white;
   width: 10em;
   height: 10em;
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.5);
   border-radius: 50%;
   float: left;
-  margin-left: 1em;
-  opacity: 0.5;
-  transition: background linear 0.5s;
+  margin-left: 2.5em;
+  opacity: 0.999;
+  transition: all linear 0.5s;
   overflow: hidden;
   border: 2px solid transparent;
 }
-/* line 198, ../sass/screen.scss */
+/* line 197, ../sass/screen.scss */
 ul[data-thumbs] li:first-child {
   margin: 0;
 }
-/* line 201, ../sass/screen.scss */
+/* line 200, ../sass/screen.scss */
 ul[data-thumbs] li.active {
-  opacity: 0.8;
+  background: rgba(255, 255, 255, 0.85);
+  opacity: 1;
+  -webkit-transform: scale(1.15);
+  -moz-transform: scale(1.15);
+  -o-transform: scale(1.15);
+  transform: scale(1.15);
 }
-/* line 204, ../sass/screen.scss */
+/* line 205, ../sass/screen.scss */
 ul[data-thumbs] li:hover {
   cursor: hand;
   cursor: pointer;
-  border: 2px solid white;
+  background: rgba(255, 255, 255, 0.85);
 }
-/* line 210, ../sass/screen.scss */
+/* line 211, ../sass/screen.scss */
 ul[data-thumbs] img {
   position: relative;
   background: white;
@@ -285,17 +289,17 @@ ul[data-thumbs] img {
   height: inherit;
 }
 
-/* line 222, ../sass/screen.scss */
+/* line 223, ../sass/screen.scss */
 .recent-articles {
   font-size: 2.5em;
 }
 
-/* line 226, ../sass/screen.scss */
+/* line 227, ../sass/screen.scss */
 main {
   padding: 2.5em 0 1em 0;
 }
 
-/* line 230, ../sass/screen.scss */
+/* line 231, ../sass/screen.scss */
 article {
   padding: 1.5em;
   border-bottom: 1px solid #e3dccf;
@@ -303,7 +307,7 @@ article {
   background: white;
   border-radius: 20px;
 }
-/* line 236, ../sass/screen.scss */
+/* line 237, ../sass/screen.scss */
 article a {
   display: block;
   font-size: 1.8em;
@@ -312,48 +316,48 @@ article a {
   color: inherit;
   color: #906f62;
 }
-/* line 243, ../sass/screen.scss */
+/* line 244, ../sass/screen.scss */
 article a:hover {
   opacity: 0.8;
 }
-/* line 247, ../sass/screen.scss */
+/* line 248, ../sass/screen.scss */
 article p {
   padding: .5em 0;
   line-height: 1.8em;
 }
-/* line 251, ../sass/screen.scss */
+/* line 252, ../sass/screen.scss */
 article span {
   color: #b1978d;
 }
-/* line 254, ../sass/screen.scss */
+/* line 255, ../sass/screen.scss */
 article .readmore {
   color: #f26430;
   font-size: 1em;
   line-height: 1em;
 }
 
-/* line 261, ../sass/screen.scss */
+/* line 262, ../sass/screen.scss */
 footer {
   background: url(../images/patterns/tweed.png);
   padding: 2em 0 5em 0;
 }
-/* line 264, ../sass/screen.scss */
+/* line 265, ../sass/screen.scss */
 footer nav {
   color: white;
   float: none;
   width: 460px;
   margin: 0 auto;
 }
-/* line 270, ../sass/screen.scss */
+/* line 271, ../sass/screen.scss */
 footer nav li a {
   color: white;
 }
-/* line 272, ../sass/screen.scss */
+/* line 273, ../sass/screen.scss */
 footer nav li a:hover {
   color: white;
   opacity: 0.8;
 }
-/* line 279, ../sass/screen.scss */
+/* line 280, ../sass/screen.scss */
 footer p {
   text-align: center;
   color: whitesmoke;

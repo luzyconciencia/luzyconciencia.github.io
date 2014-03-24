@@ -64,14 +64,12 @@
 					view = 0;
 				}
 
-				if( (view !== currentView) ){				
-
+				if( (view !== currentView) ){
 
 					thumbnails.removeClass('active');
-					views[view].addClass('active');
-
+					thumbnails[view].addClass('active');
 					views.removeClass('active');
-					views[ view ].addClass('active');
+					views[view].addClass('active');
 
 					currentView = view;
 
